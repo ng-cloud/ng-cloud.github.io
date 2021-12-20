@@ -1,12 +1,12 @@
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto 1 fr 1fr auto;
+    grid-template-rows: auto 1fr 1fr 1fr auto;
     gap: 1px;
     height: 95v;
 }
 
-header, footer{
+header, footer, #Profile, #bio, #resume, #projects {
     grid-column: 1 / 4;
     border-style: solid;
 }
@@ -21,9 +21,14 @@ header, footer{
     grid-row: 2 / 3;
 }
 
-#projects{
+#resume{
     grid-column: 1 / 4;
     grid-row: 3 / 4;
+}
+
+#projects{
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
 }
 
 .navbar-nav{
