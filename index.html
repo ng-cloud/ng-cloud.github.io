@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang='en'>
 	<head>
+		<title>Pappe Ngom Personal Website</title>
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>Pappe Ngom Personal Website</title>
-
-		<!-- Bootstrap CSS link -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <!-- JavaScript Bundle with Popper -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    	<!-- Bootstrap CSS -->
+    	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
         <!-- Font Awesome CSS link -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+		<!-- W3schools CSS link -->
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 		<!-- Link to CSS styles file -->
-		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="mystyles.css">
+
+
 
 	</head>
 
@@ -24,34 +26,35 @@
 
 		<div class="grid">
 <!-- Header section: navigation bar -->
-			<header class="mynav">
-				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<header class="mynav">  
+				<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="height: 50px";>
 					<div class="container-fluid">
 						<a class="navbar-brand" href="#"></a>
-						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 						</button>
-						<div class="collapse navbar-collapse" id="navbarNavDropdown">
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav">
-							<!-- <li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
-							</li> -->
+
 							<li class="nav-item">
-								<a class="nav-link" href="#">ABOUT</a>
-							</li>
-							<li class="nav-item">
-							    <a class="nav-link" href="#">RESUME</a>
-							</li>
+							<a class="nav-link active" aria-current="page" href="#">ABOUT</a>
+							</li> 
+
 							<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								PROJECTS
+							<a class="nav-link dropdown-toggle" href="#ResumeSection" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								RESUME
 							</a>
 							<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-								<li><a class="dropdown-item" href="#">PacMen Factory</a></li>
-								<li><a class="dropdown-item" href="#">Real-Time Bus Tracker</a></li>
-								<li><a class="dropdown-item" href="#">Eye Exercise</a></li>
+								<li><a class="dropdown-item" href="#ResumeSection">Education/Skills</a></li>
+								<li><a class="dropdown-item" href="#Profexperience">Professional Experience</a></li>
+								<li><a class="dropdown-item" href="#Academicexperience">Academic Experience</a></li>
 							</ul>
 							</li>
+
+							<li class="nav-item">
+							    <a class="nav-link" href="#projects">PROJECTS</a>
+							</li>
+
 							<li class="nav-item">
 								<a class="nav-link" href="#socialemail">CONTACT</a>
 							</li>
@@ -60,22 +63,22 @@
 					</div>
 				</nav>
 
-			</header>
+		    </header>
 
 <!-- Left section: Profile picture-->
-			<section id="Profile">
-				<a class="logo" href=""><img src="./PNgom Profile Picture resized.jpg" alt=""></a>
+			<div id="Profile">
+				<a class="logo" href=""><img src="./PNgom Profile Picture resized.jpg" alt="" class="w3-circle"></a>
 				<div>
 				<h2>Pappe Ngom</h2>
-				<p><a href="mailto:ngompappe@gmail.com">ngompappe@gmail.com</a></p>
+				<p><a href="mailto:ngompappe@gmail.com" style="color: #212529">ngompappe@gmail.com</a></p>
 				</div>
-			</section>
+			</div>
 
 <!-- Bio section aligned with Profile-->
 			<div id="bio">
                 <h3>About me</h3>
 				I am a data scientist with over 20 years consulting experience helping businesses solve strategic and operational issues. 
-				I currently work for <a href="https://www.faegredrinker.com" target="_blank"> Faegre Drinker </a>, an international top 50 American law firm.<br>
+				I currently work for <a href="https://www.faegredrinker.com" target="_blank" style="color: #212529">Faegre Drinker</a>,an international top 50 American law firm.<br>
 				<br>
 				I was born in Senegal where I received the first part of my schooling ending with a Bachelor of Science in Statistics. I moved to the United States to further my education culminating with a Master of Science in Statistics and PhD in Economics from the University of Connecticut, Storrs, CT.
 				<br>
@@ -88,8 +91,8 @@
 				<br>
 				In my spare time, among other activities, I like to:<br>
 				<ul class="funtimeactivities">
-					<li>play and watch soccer or coach little kids</li>
-					<li>enjoy nature: camping, short hikes, comtemplation of beautiful sceneries</li>
+					<li>play and watch soccer and coach little kids</li>
+					<li>enjoy nature: camping, short hikes, contemplation of beautiful sceneries</li>
 					<li>spend time with close friends</li>
 					<li>learn new things: currently I am into full stack web development and the Arabic language</li>
 				  </ul> 
@@ -99,17 +102,149 @@
 			</div>
 
 
-<!-- Projects section: Social Media, Contact and Copyright-->
-			<div id="Resume">
-				<h3>Experience and Education</h3>
-			</div>
+<!-- Resume section-->
+<div class="w3-container" id="ResumeSection">
+	<h2>Resume</h2>
+  
+  <!-- Row separator for block 1 containing card 1 and 2-->
+  <div class="row">
+	 <!-- Card 1: Education-->
+	<div class="w3-card-4" id="Educationcard"  style="width:50%;">
+	  <header class="w3-container w3-dark-grey" style="width:100%";>
+		<h3>Education</h3>
+	  </header>
+  
+	  <div class="listeducation">
+		<p><b>UNIVERSITY OF CONNECTICUT, Storrs, CT</b></p>
+		<ul>
+			<li>Ph.D., Economics</li>
+			<li>Master of Arts, Economics</li>
+			<li>Master of Science, Statistics</li>
+			<br>
+			<li>Honors: Pre-doctoral and Doctoral Fellowships, University of Connecticut</li>
+		</ul>  
+		<p><b>NATIONAL SCHOOL OF APPLIED ECONOMICS, Dakar, Senegal</b></p>
+		<ul>
+			<li>Bachelor of Science, Statistics</li>
+		</ul>  
+	  </div>
+	</div>
 
-<!-- Projects section: Social Media, Contact and Copyright-->
+	 <!-- Card 2: Skills-->
+	 <div class="w3-card-4" style="width:50%;">
+		<header class="w3-container w3-dark-grey" style="width:100%";>
+		  <h3>Skills</h3>
+		</header>
+	
+		<div class="listskills">
+		  <ul>
+			  <li>Business consulting skills</li>
+			  <li>Individual contributor or Manager</li>
+			  <li>Results / Impact driven</li>
+			  <li>Data Science</li>
+			  <li>Market Research</li>
+			  <li>Strategy Analytics</li>
+			  <li>Software: SQL, PYTHON, JUPYTER, R, SAS, POWERBI, TABLEAU, MATLAB, AWS, GIT, SAWTOOTH, SPSS, JAVASCRIPT, HTML/CSS</li>
+			  <li>Language: English (fluent), French (fluent), Wolof (native)</li>
+			</ul>  
+		</div>
+	  </div>
+  </div>
+
+  	<!-- Card 3: PROFESSIONAL EXPERIENCE-->
+	<div class="w3-card-4" id="Profexperience" style="width:100%;">
+		<header class="w3-container w3-dark-grey" style="width:100%";>
+		  <h3>Professional Experience</h3>
+		</header>
+	
+		<div class="w3-container">
+		 <p><b>FAEGRE DRINKER BIDDLE & REATH LLP, Florham Park, NJ   2020-Present</b></p>
+		 <ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+	     </ul> 
+		 
+	    <p><b>MEMORIAL SLOAN KETTERING CANCER CENTER, New York NY  2019 - 2020 <br>Senior Strategy Analyst / Data Scientist</b></p>
+		<p>Work as embedded analyst to champion data-driven decision-making within Marketing & Communications</p>
+		<ul>
+			<li>Designed and built a Tableau dashboard for Email Marketing to provide performance insights in subscriber 
+				engagement and email list quality. Dashboard regular users are Email Marketing operations team and MSK’s many 
+				publications and events owners</li>
+			<li>Supported External Physician Relations with better targeting insights based on a predictive model of referral behavior</li>
+			<li>Built SQL queries to answer a variety of marketing questions</li>
+		</ul> 	   
+		  <p><b>MARAKON, CHARLES RIVER ASSOCIATES, New York NY  2004 –2019<br>Manager, Customer Insights Analytics / Data Science </b></p>
+		  <p>Manage and perform customer analytics/data science with primary focus on generating insights to inform business growth 
+			and productivity</p>
+			  <ul>
+				  <li>Assessed the market potential of an innovative retirement product: identify revenue drivers and delineate go-to-market 
+					  strategy in support of a product launch</li>
+				  <li>Prioritized the drivers of success for new market entry through a rigorous assessment of customer behaviors, needs 
+					  and willingness to pay resulting in successful store openings in a new region</li>
+				  <li>Diagnosed cost synergies and growth opportunities in a business acquisition</li>
+				  <li>Developed, implemented and documented customer segmentations to support offer redesign strategies</li>
+				  <li>Identified and evaluated growth headroom across categories for a retailer. Uncovered relative offer gaps to capture the 
+					headroom</li>
+				  <li>Prioritized the drivers of corporate banking sales force effectiveness using econometric modeling and social 
+					networking analysis</li>
+				  <li>Developed customer value maps to assess demand drivers, competitive positioning and organic growth opportunities</li>
+				  <li>Managed market research projects</li>
+				  <li>Built a forecasting model of merger and acquisition deals used for banker capacity planning</li>
+				  <li>Built web scraping code for various data extraction efforts</li>
+			 </ul> 
+		  <p><b>MERCER MANAGEMENT CONSULTING, Inc., Boston MA 1997 - 2004 <br> Consultant to Senior Associate</b></p>
+		  <p>Solved strategic and operational business questions using marketing science techniques</p>
+			 <ul>
+				<li>Developed customer database models to target and tailor offers to prospects resulting in improved campaign ROI</li>
+				<li>Used experimental design to identify efficient and impactful insights and support a product test and learn strategy</li>
+				<li>Developed account management models (up-sell, cross-sell, retention)</li>
+				<li>Developed customer segmentation integrating customer behaviors, needs and attitudes, and designed offers to meet segment needs</li>
+				<li>Built models to identify drivers of brand equity and link drivers to financial performance</li>
+				<li>Developed demand models based on a combination of stated preference data and revealed preference data</li>
+				<li>Developed and implemented a unifying metric of customer value based on customer profitability</li>
+				<li>Developed an optimal pricing scheme for a media company</li>
+				<li>Developed an enterprise linkage model used for optimal resource allocation and customer loyalty management</li>
+			 </ul> 
+		</div>		
+    </div>
+
+  	<!-- Card 4: ACADEMIC EXPERIENCE-->
+	<div class="w3-card-4" id="Academicexperience" style="width:100%;">
+		<header class="w3-container w3-dark-grey" style="width:100%";>
+		  <h3>Academic Experience</h3>
+		</header>
+         <div>
+		  <p><b>UNIVERSITY OF CONNECTICUT:</b><i>- Research Assistant, Connecticut Center for Economic Analysis</i> <br>Wrote SAS programs to manage large data files for a dynamic tax analysis model. Constructed forecasts of gross state 
+			product based on input/output tables and labor data</p>
+		  
+		  <p><i>Teaching Assistant: Department of Economics</i><br>SAS tutorials, econometrics, times series analysis, principles of microeconomics</p>	
+		 
+          <p><b>SELF-EMPLOYED</b> <i>- Statistical Consultant</i> <br> Conducted survey research studies for private and non-governmental organizations</p>
+
+          <p><b>UNIVERSITY OF CONNECTICUT</b> <i>- Research Assistant, Tutor</i> <br> Conducted the coding, data input and data analysis of socio-economic studies. Tutored Statistics, economics, 
+			mathematics</p>
+
+		  <p><b>NATIONAL SCHOOL OF APPLIED ECONOMICS</b> <i>- Research Assistant, Teaching Assistant</i> <br> Designed questionnaires, supervised coding and data input. Conducted data analysis and presented final reports. Taught 
+			statistics and mathematics</p>
+
+		 </div>		 
+	</div>
+	
+
+</div>
+
+<!-- Projects section -->
 			<div id="projects">
-                <h3>Select Github portfolio projects</h3>
-			</div>
+                <h2>Select Github portfolio projects</h2>
 
-<!-- Footer section-->
+
+
+            </div>
+
+<!-- Footer section: Social Media, Contact and Copyright-->
 			<footer id="socialemail">
 				<!--  <div id="container"> -->
 					<ul class="social">
@@ -154,6 +289,10 @@
 
 
 		</div>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
 	</body>
 </html>
