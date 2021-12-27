@@ -6,6 +6,14 @@
 		<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+		<!-- Links for carousel: projects section -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="./css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+		<link rel="stylesheet" href="./css/style.css">
+
     	<!-- Bootstrap CSS -->
     	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
@@ -78,7 +86,7 @@
 			<div id="bio">
                 <h3>About me</h3>
 				I am a data scientist with over 20 years consulting experience helping businesses solve strategic and operational issues. 
-				I currently work for <a href="https://www.faegredrinker.com" target="_blank" style="color: #212529">Faegre Drinker</a>,an international top 50 American law firm.<br>
+				I currently work for <a href="https://www.faegredrinker.com" target="_blank" style="color: #212529">Faegre Drinker</a>, an international top 50 American law firm.<br>
 				<br>
 				I was born in Senegal where I received the first part of my schooling ending with a Bachelor of Science in Statistics. I moved to the United States to further my education culminating with a Master of Science in Statistics and PhD in Economics from the University of Connecticut, Storrs, CT.
 				<br>
@@ -158,13 +166,13 @@
 		</header>
 	
 		<div class="w3-container">
-		 <p><b>FAEGRE DRINKER BIDDLE & REATH LLP, Florham Park, NJ   2020-Present</b></p>
+		 <p><b>FAEGRE DRINKER BIDDLE & REATH LLP, Florham Park, NJ   2020-Present<br>Lead Data Scientist - Innovation</b></p>
+		 <p>Work with firm stakeholders to drive client acquisition/retention and operational excellence</p>
 		 <ul>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
+			<li>Designed and executed a data-driven client cross-sell project</li>
+			<li>Drove efficiencies by supporting operational units to harness complex data with data science tools</li>
+			<li>Built reporting dashboards</li>
+			<li>Derived insights from market research surveys to support firm strategy</li>
 	     </ul> 
 		 
 	    <p><b>MEMORIAL SLOAN KETTERING CANCER CENTER, New York NY  2019 - 2020 <br>Senior Strategy Analyst / Data Scientist</b></p>
@@ -237,12 +245,64 @@
 </div>
 
 <!-- Projects section -->
-			<div id="projects">
-                <h2>Select Github portfolio projects</h2>
+  <div id="projects">
+    <h2>Select Github portfolio projects</h2>
+	<section class="ftco-section">
+
+		<div class="container">
+			<div class="row">
+				<!-- <div class="col-md-12 text-center">
+					<h2 class="heading-section mb-5 pb-md-4">Carousel #07</h2>
+				</div> -->
+				<div class="col-md-12">
+				 <div class="featured-carousel owl-carousel">
+						<div class="item">
+							<div class="blog-entry">
+							   <a href="#" class="block-20 d-flex align-items-start" style="background-image: url('images/PacmanFactoryOutput.png');"> </a>
+							    <div class="text border border-top-0 p-4">
+								    <h3 class="heading"><a href="#">Pacmen Factory</a></h3>
+								    <p>Use Javascript and HTML/CSS to create a game with lots of PacMan, all moving around freely with their mouth opened and closed, bouncing of both the vertical and horizontal walls. The user can add as many PacMan as she wants.</p>
+									<div class="d-flex align-items-center mt-4">
+										<p class="mb-0"><a href="https://github.com/pngom/Pacmen-Factory-Exercise" class="btn btn-primary">GitHub Repo <span class="ion-ios-arrow-round-forward"></span></a></p>
+									</div>
+							   </div>
+							</div>
+						</div>
+
+					   <div class="item">
+							<div class="blog-entry">
+				               <a href="#" class="block-20 d-flex align-items-start" style="background-image: url('images/Eyes.png');"> </a>
+								<div class="text border border-top-0 p-4">
+									<h3 class="heading"><a href="#">Eye exercise</a></h3>
+									<p>Use Javascript and HTML/CSS to create two eyes and make them follow the movement of the mouse synchronously.</p>
+									<div class="d-flex align-items-center mt-4">
+										<p class="mb-0"><a href="https://github.com/pngom/Eye-Exercise" class="btn btn-primary">GitHub Repo <span class="ion-ios-arrow-round-forward"></span></a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="blog-entry">
+				               <a href="#" class="block-20 d-flex align-items-start" style="background-image: url('images/Busesonmap.png');"></a>
+				               <div class="text border border-top-0 p-4">
+									<h3 class="heading"><a href="#">Real Time Bus Tracker</a></h3>
+									<p>Use Javascript and HTML/CSS to create a real-time bus tracker. The data is fetched real-time using the Massachusetts Bay Transportation Authority (MBTA) API portal. Buses are tracked on the map by calling Google Maps API.</p>
+									<div class="d-flex align-items-center mt-4">
+										<p class="mb-0"><a href="https://github.com/pngom/Real-Time-Bus-Tracker" class="btn btn-primary">GitHub Repo <span class="ion-ios-arrow-round-forward"></span></a></p>
+								    </div>
+							    </div>
+							</div>
+						</div>
 
 
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-            </div>
+</div>
 
 <!-- Footer section: Social Media, Contact and Copyright-->
 			<footer id="socialemail">
@@ -293,6 +353,10 @@
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
 	</body>
 </html>
